@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RentMate - Your Perfect Rental Solution</title>
+  <link rel="stylesheet" href="./css/presentation.css">
+</head>
+<body>
+  <header>
+    <h1>RentMate</h1>
+    <p>Your Perfect Rental Solution</p>
+    <div class="header-buttons">
+      <a href="#">User Profile</a>
+      <a href="./login.html">Logout</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="propertyListings">
+      <h2>Available Properties:</h2>
+      <ul>
+        <li>
+          <h3>A Perfect 3BHK home for you and your kiddo.</h3>
+          <img src="./images/property1.jpg" alt="Property 1">
+          <p>Location: Toronto, ON</p>
+          <p>Price: $1.8 Million</p>
+          <a href="#">View Details</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="searchTabs">
+      <h2>Search Rental Accommodations</h2>
+      <ul>
+        <li class="active">Location</li>
+        <li>Price Range</li>
+        <li>Amenities</li>
+      </ul>
+
+      <div class="tabContent">
+        <form id="locationSearchForm">
+          <label for="city">City</label>
+          <input type="text" id="city">
+
+          <label for="province">Province</label>
+          <input type="text" id="province">
+
+          <button type="submit">Search</button>
+        </form>
+
+        
+        <form id="priceRangeSearchForm" class="hidden">
+          <label for="minPrice">Minimum Price</label>
+          <input type="number" id="minPrice">
+
+          <label for="maxPrice">Maximum Price</label>
+          <input type="number" id="maxPrice">
+
+          <button type="submit">Search</button>
+        </form>
+
+        <form id="amenitiesSearchForm" class="hidden">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="booking">
+      <h2>Room Booking and Reservation</h2>
+      <form id="bookingForm">
+        <label for="checkInDate">Check-In Date</label>
+        <input type="date" id="checkInDate" required>
+
+        <label for="checkOutDate">Check-Out Date</label>
+        <input type="date" id="checkOutDate" required>
+
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+  <footer>
+    <p class="footer-text">© 2023 RentMate. All rights reserved. | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+  </footer>
+</main>
+</body>
+</html>
